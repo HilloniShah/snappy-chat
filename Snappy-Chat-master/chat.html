@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Myself </title>
+      <link href="style.css" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="member-area">
+        <div class="user-info">
+            <span id="username"></span>
+          <span class="logout"> LogOut </span>
+        </div>
+    <div class="members" id="members">
+      <div class="member">
+
+      </div>
+
+    </div>
+</div>
+
+<div class="message-area">
+        <div class="chat-info">
+              Priyanka
+        </div>
+
+        <div class="messages" id="messages">
+
+        </div>
+
+        <div class="chat-form">
+              <input type="hidden" id="chat_id" />
+              <input id="message-text" type="text" class="chat-message"
+              placeholder="Write your message and press enter..." />
+              <button id="send-button">Send </button>
+        </div>
+
+</div>
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBXvy27J5qqu1RHBhsiiOaFCwc-VKVTyxY",
+      authDomain: "snappychat-dfe8c.firebaseapp.com",
+      databaseURL: "https://snappychat-dfe8c.firebaseio.com",
+      storageBucket: "snappychat-dfe8c.appspot.com",
+      messagingSenderId: "1035009514188"
+      };
+      firebase.initializeApp(config);
+  </script>
+
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="chat.js"></script>
+
+</body>
+
+
+</html>
